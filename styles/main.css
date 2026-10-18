@@ -22,8 +22,9 @@ body {
     align-items: center;
     justify-content: center;
     padding: 24px;
-    background: #4f6f52;
-    color: #fff;
+    /* Оливковый и кремовый — те же цвета, что у кнопок и фона сайта */
+    background: #787f55;
+    color: #fdfbf3;
     font-family: "Cormorant Garamond", Georgia, serif;
     font-size: 28px;
     line-height: 1.4;
