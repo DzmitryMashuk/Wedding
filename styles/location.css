@@ -1,0 +1,62 @@
+.location {
+  --location-green: #787f55;
+
+  position: relative;
+  aspect-ratio: 853 / 1280;
+  /* multiply окрашивает белый фон картинки в кремовый цвет секций выше */
+  background: #fdfbf3 url("../img/location_bg.jpeg") top center / 100% auto
+    no-repeat;
+  background-blend-mode: multiply;
+  color: var(--location-green);
+}
+
+.location__content {
+  position: absolute;
+  top: 43%;
+  left: 1vw;
+  width: 46vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.location__title {
+  /* left, а не transform: transform занят анимацией появления */
+  position: relative;
+  left: 14vw;
+  margin: 0 0 3vw;
+  font-family: "Great Vibes", cursive;
+  font-size: 16vw;
+  font-weight: 400;
+  line-height: 1;
+  white-space: nowrap;
+  /* У Great Vibes нет жирного начертания — утолщаем обводкой */
+  -webkit-text-stroke: 0.025em currentColor;
+}
+
+.location__venue {
+  margin: 0;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 5.6vw;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.location__type {
+  margin: 0 0 0.5vw;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 5.2vw;
+  font-weight: 600;
+}
+
+.location__link {
+  margin-top: 5vw;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 5.2vw;
+  font-weight: 600;
+  color: inherit;
+  text-underline-offset: 0.2em;
+}

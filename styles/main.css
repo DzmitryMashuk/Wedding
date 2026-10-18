@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+}
+
+.desktop-notice {
+  display: none;
+}
+
+@media (min-width: 426px) {
+  body {
+    overflow: hidden;
+  }
+
+  main {
+    display: none;
+  }
+
+  .desktop-notice {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: #4f6f52;
+    color: #fff;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 28px;
+    line-height: 1.4;
+    text-align: center;
+  }
+}

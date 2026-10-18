@@ -1,0 +1,118 @@
+.program {
+  --program-green: #787f55;
+
+  padding: 14vw 0 12vw;
+  background: #fdfbf3;
+  color: var(--program-green);
+  text-align: center;
+}
+
+.program__title {
+  margin: 0 0 6vw;
+  font-family: "Great Vibes", cursive;
+  font-size: 13vw;
+  font-weight: 400;
+  line-height: 1;
+}
+
+/* Все координаты внутри сцены в vw, чтобы раскладка масштабировалась
+   вместе с картинкой дорожки */
+.program__stage {
+  position: relative;
+  height: 165vw;
+}
+
+.program__path {
+  position: absolute;
+  top: 0;
+  left: 10vw;
+  width: 72vw;
+}
+
+.program__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.program__item {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.program__item--arrival {
+  top: 7vw;
+  left: 0;
+  width: 40vw;
+}
+
+.program__item--ceremony {
+  top: 41vw;
+  right: 4vw;
+  width: 46vw;
+}
+
+.program__item--banquet {
+  top: 72vw;
+  left: 0;
+  width: 40vw;
+}
+
+.program__item--end {
+  top: 113vw;
+  right: 4vw;
+  width: 46vw;
+}
+
+.program__time {
+  margin: 0;
+  font-family: "Great Vibes", cursive;
+  font-size: 9vw;
+  line-height: 1.1;
+}
+
+.program__name {
+  margin: 0 0 3vw;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 4.3vw;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.program__icon {
+  width: 26vw;
+}
+
+.program__item--banquet .program__icon {
+  width: 30vw;
+}
+
+.program__butterfly {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 14vw;
+  pointer-events: none;
+  will-change: transform;
+}
+
+.program__butterfly img {
+  display: block;
+  width: 100%;
+  animation: butterfly-flap 0.35s ease-in-out infinite alternate;
+}
+
+@keyframes butterfly-flap {
+  to {
+    transform: scaleX(0.55);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .program__butterfly img {
+    animation: none;
+  }
+}

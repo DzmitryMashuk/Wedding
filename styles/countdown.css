@@ -1,0 +1,94 @@
+.countdown {
+  --countdown-green: #787f55;
+  --countdown-light: #fdfbf3;
+
+  padding: 12vw 3vw 26vw;
+  background: var(--countdown-light);
+  color: var(--countdown-green);
+  text-align: center;
+}
+
+.countdown__title {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 8vw;
+  font-family: "Great Vibes", cursive;
+  font-size: 12.5vw;
+  font-weight: 400;
+  line-height: 0.95;
+}
+
+.countdown__title span:first-child {
+  margin-left: 6vw;
+}
+
+.countdown__wrap {
+  position: relative;
+}
+
+/* Веточки выглядывают из-за плашки таймера */
+.countdown__flower,
+.countdown__lemon {
+  position: absolute;
+  z-index: 0;
+}
+
+.countdown__flower {
+  top: -9vw;
+  right: -3vw;
+  width: 22vw;
+}
+
+.countdown__lemon {
+  bottom: -20vw;
+  left: -1vw;
+  width: 24vw;
+}
+
+.countdown__timer {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 7vw 3vw;
+  border-radius: 16vw;
+  background: var(--countdown-green);
+  color: var(--countdown-light);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 500;
+}
+
+/* Тонкая светлая рамка внутри плашки */
+.countdown__timer::before {
+  content: "";
+  position: absolute;
+  inset: 1.5vw;
+  border: 1px solid rgb(253 251 243 / 0.7);
+  border-radius: 14.5vw;
+  pointer-events: none;
+}
+
+.countdown__unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 17vw;
+}
+
+.countdown__value {
+  font-size: 12vw;
+  line-height: 1;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+.countdown__label {
+  margin-top: 2vw;
+  font-size: 3.6vw;
+}
+
+.countdown__colon {
+  padding: 0 0.5vw;
+  font-size: 6vw;
+  line-height: 2.2;
+}

@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Дима и Даша</title>
+    <link rel="stylesheet" href="./styles/fonts.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/hero.css" />
+    <link rel="stylesheet" href="./styles/invitation.css" />
+    <link rel="stylesheet" href="./styles/location.css" />
+    <link rel="stylesheet" href="./styles/program.css" />
+    <link rel="stylesheet" href="./styles/dresscode.css" />
+    <link rel="stylesheet" href="./styles/wishes.css" />
+    <link rel="stylesheet" href="./styles/rsvp.css" />
+    <link rel="stylesheet" href="./styles/contacts.css" />
+    <link rel="stylesheet" href="./styles/countdown.css" />
+    <link rel="stylesheet" href="./styles/reveal.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <script src="./scripts/reveal.js" defer></script>
+    <script src="./scripts/butterfly.js" defer></script>
+    <script src="./scripts/dresscode.js" defer></script>
+    <script src="./scripts/rsvp.js" defer></script>
+    <script src="./scripts/countdown.js" defer></script>
+  </head>
+  <body>
+    <div class="desktop-notice">
+      Пожалуйста, откройте приглашение на телефоне
+    </div>
+
+    <main>
+      <section class="hero">
+        <div class="hero__content">
+          <div class="hero__monogram" aria-hidden="true">
+            <span>Д</span><span>Д</span>
+          </div>
+          <p class="hero__tagline">Мы женимся!</p>
+          <h1 class="hero__title">
+            <span class="hero__name hero__name--first">Дима</span>
+            <span class="hero__amp">&amp;</span>
+            <span class="hero__name hero__name--second">Даша</span>
+          </h1>
+          <p class="hero__subtitle">5 сентября 2027</p>
+        </div>
+      </section>
+
+      <section class="invitation">
+        <h2 class="invitation__title">
+          <span>Дорогие</span>
+          <span>друзья!</span>
+        </h2>
+        <p class="invitation__text">
+          Мы давно ждали момента,<br />
+          когда сможем разделить<br />
+          с&nbsp;Вами очень важный день<br />
+          в&nbsp;нашей жизни&nbsp;&ndash;
+          <span class="invitation__accent">нашу свадьбу!</span>
+        </p>
+        <p class="invitation__text">
+          Мы рады пригласить Вас<br />
+          стать свидетелями этого<br />
+          торжества и&nbsp;разделить с&nbsp;нами<br />
+          самые яркие и&nbsp;трогательные<br />
+          моменты этого дня!
+        </p>
+
+        <div class="calendar">
+          <h3 class="calendar__month">сентябрь</h3>
+          <div class="calendar__grid">
+            <span class="calendar__weekday">пн</span>
+            <span class="calendar__weekday">вт</span>
+            <span class="calendar__weekday">ср</span>
+            <span class="calendar__weekday">чт</span>
+            <span class="calendar__weekday">пт</span>
+            <span class="calendar__weekday">сб</span>
+            <span class="calendar__weekday">вс</span>
+
+            <span></span><span></span> <span>1</span><span>2</span><span>3</span
+            ><span>4</span>
+            <span class="calendar__day--wedding">
+              <svg
+                class="calendar__heart"
+                viewBox="0 0 100 90"
+                aria-hidden="true"
+              >
+                <path
+                  d="M50 84 C20 62 4 46 4 27 C4 13 15 4 27 4 C38 4 46 11 50 20 C54 11 62 4 73 4 C85 4 96 13 96 27 C96 46 80 62 50 84 Z"
+                />
+              </svg>
+              5
+            </span>
+            <span>6</span><span>7</span><span>8</span><span>9</span>
+            <span>10</span><span>11</span><span>12</span> <span>13</span
+            ><span>14</span><span>15</span><span>16</span> <span>17</span
+            ><span>18</span><span>19</span> <span>20</span><span>21</span
+            ><span>22</span><span>23</span> <span>24</span><span>25</span
+            ><span>26</span> <span>27</span><span>28</span><span>29</span
+            ><span>30</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="location">
+        <div class="location__content">
+          <h2 class="location__title">Локация</h2>
+          <p class="location__type">Усадьба</p>
+          <p class="location__venue">«Royal Hall»</p>
+          <a
+            class="location__link"
+            href="https://yandex.by/maps/org/usadba_royal_hall/1400112911/?ll=27.793345%2C54.137742&amp;z=17.13"
+            target="_blank"
+            rel="noopener"
+            >Посмотреть на карте</a
+          >
+        </div>
+      </section>
+
+      <section class="program">
+        <h2 class="program__title">Программа</h2>
+        <div class="program__stage">
+          <img
+            class="program__path"
+            src="./img/program_path.webp"
+            alt=""
+            aria-hidden="true"
+          />
+          <div class="program__butterfly" aria-hidden="true">
+            <img src="./img/butterfly.webp" alt="" />
+          </div>
+
+          <ol class="program__list">
+            <li class="program__item program__item--arrival">
+              <p class="program__time">15:00</p>
+              <p class="program__name">Сбор гостей</p>
+              <img class="program__icon" src="./img/guest_arrival.svg" alt="" />
+            </li>
+            <li class="program__item program__item--ceremony">
+              <p class="program__time">16:00</p>
+              <p class="program__name">Торжественная<br />церемония</p>
+              <img
+                class="program__icon"
+                src="./img/ceremonial_event.svg"
+                alt=""
+              />
+            </li>
+            <li class="program__item program__item--banquet">
+              <p class="program__time">17:00</p>
+              <p class="program__name">Банкет</p>
+              <img class="program__icon" src="./img/banquet.svg" alt="" />
+            </li>
+            <li class="program__item program__item--end">
+              <p class="program__time">23:00</p>
+              <p class="program__name">
+                Окончание праздника,<br />обратный трансфер
+              </p>
+              <img
+                class="program__icon"
+                src="./img/end_celebration.svg"
+                alt=""
+              />
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="dresscode">
+        <h2 class="dresscode__title">Дресс-код</h2>
+        <p class="dresscode__subtitle">Краски итальянского лета</p>
+        <p class="dresscode__text">
+          Мы будем очень благодарны, если вы поддержите цветовую гамму нашего
+          праздника и&nbsp;выберете наряды в&nbsp;оттенках этой
+          палитры&nbsp;&ndash; так фотографии получатся особенно&nbsp;тёплыми.
+        </p>
+
+        <ul class="dresscode__palette">
+          <li class="dresscode__color" style="--swatch: #ecd36a">Лимон</li>
+          <li class="dresscode__color" style="--swatch: #6f7a52">Олива</li>
+          <li class="dresscode__color" style="--swatch: #8b9a7c">Шалфей</li>
+          <li class="dresscode__color" style="--swatch: #b9734f">Терракота</li>
+          <li class="dresscode__color" style="--swatch: #6b4a35">Кофе</li>
+          <li class="dresscode__color" style="--swatch: #3a3a38">Уголь</li>
+        </ul>
+
+        <p class="dresscode__text">Пожалуйста, оставьте белый цвет невесте.</p>
+
+        <div class="dresscode__flight" aria-hidden="true">
+          <div class="dresscode__butterfly dresscode__butterfly--yellow">
+            <img src="./img/butterfly.webp" alt="" />
+          </div>
+          <div class="dresscode__butterfly dresscode__butterfly--pastel">
+            <img src="./img/butterfly2.webp" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="wishes">
+        <div class="wishes__content">
+          <h2 class="wishes__title">Пожелания</h2>
+          <p class="wishes__text">
+            Ваше присутствие&nbsp;&ndash; главный подарок для нас!
+          </p>
+          <svg class="wishes__sprig" viewBox="0 0 40 40" aria-hidden="true">
+            <path d="M8 34 C16 26 24 18 32 6" />
+            <path d="M14 28 C10 24 9 19 11 15 C15 18 16 23 14 28 Z" />
+            <path d="M20 22 C24 21 28 22 31 25 C27 27 23 26 20 22 Z" />
+            <path d="M24 16 C21 12 21 8 23 5 C26 8 26 12 24 16 Z" />
+          </svg>
+          <p class="wishes__text">
+            Пожалуйста, не дарите цветы, в&nbsp;свадебной суете они,
+            к&nbsp;сожалению, не проживут долго. Лучше подарите нам улыбку
+            и&nbsp;добрые слова, они останутся в&nbsp;памяти надолго!
+          </p>
+          <p class="wishes__text">
+            Приятным комплиментом для нас вместо букета будет бутылка вашего
+            любимого алкогольного напитка!
+          </p>
+          <svg class="wishes__sprig" viewBox="0 0 40 40" aria-hidden="true">
+            <path d="M8 34 C16 26 24 18 32 6" />
+            <path d="M14 28 C10 24 9 19 11 15 C15 18 16 23 14 28 Z" />
+            <path d="M20 22 C24 21 28 22 31 25 C27 27 23 26 20 22 Z" />
+            <path d="M24 16 C21 12 21 8 23 5 C26 8 26 12 24 16 Z" />
+          </svg>
+          <p class="wishes__text">
+            Пожалуйста, возьмите с&nbsp;собой 10&nbsp;долларов&nbsp;&ndash; они
+            понадобятся для участия в&nbsp;весёлой игре!
+          </p>
+        </div>
+      </section>
+
+      <section class="rsvp">
+        <h2 class="rsvp__title">Анкета</h2>
+        <p class="rsvp__intro">Пожалуйста, подтвердите ваше присутствие</p>
+
+        <form class="rsvp__form" novalidate>
+          <div class="rsvp__field">
+            <label class="rsvp__question" for="rsvp-name">Имя и фамилия</label>
+            <input
+              class="rsvp__input"
+              id="rsvp-name"
+              name="name"
+              type="text"
+              autocomplete="name"
+              required
+            />
+          </div>
+
+          <fieldset class="rsvp__field">
+            <legend class="rsvp__question">
+              Сможете ли Вы присутствовать?
+            </legend>
+            <label class="rsvp__option">
+              <input type="radio" name="attendance" value="yes" required />
+              Да, с удовольствием!
+            </label>
+            <label class="rsvp__option">
+              <input type="radio" name="attendance" value="no" />
+              К сожалению, не смогу
+            </label>
+          </fieldset>
+
+          <!-- Вопросы ниже показываются, только если гость придёт -->
+          <div class="rsvp__attending" hidden>
+            <fieldset class="rsvp__field">
+              <legend class="rsvp__question">Вы будете</legend>
+              <label class="rsvp__option">
+                <input type="radio" name="company" value="alone" />
+                Один / одна
+              </label>
+              <label class="rsvp__option">
+                <input type="radio" name="company" value="plus-one" />
+                Со спутником (+1)
+              </label>
+            </fieldset>
+
+            <div class="rsvp__field rsvp__partner" hidden>
+              <label class="rsvp__question" for="rsvp-partner"
+                >Имя и фамилия спутника</label
+              >
+              <input
+                class="rsvp__input"
+                id="rsvp-partner"
+                name="partner"
+                type="text"
+                disabled
+              />
+            </div>
+
+            <fieldset class="rsvp__field">
+              <legend class="rsvp__question">Предпочтения по напиткам</legend>
+              <p class="rsvp__hint">Можно выбрать несколько вариантов</p>
+              <label class="rsvp__option">
+                <input type="checkbox" name="drinks" value="red-wine" />
+                Вино красное
+              </label>
+              <label class="rsvp__option">
+                <input type="checkbox" name="drinks" value="white-wine" />
+                Вино белое
+              </label>
+              <label class="rsvp__option">
+                <input type="checkbox" name="drinks" value="sparkling" />
+                Игристое
+              </label>
+              <label class="rsvp__option">
+                <input type="checkbox" name="drinks" value="whisky-cognac" />
+                Виски / коньяк
+              </label>
+              <label class="rsvp__option">
+                <input type="checkbox" name="drinks" value="vodka" />
+                Водка
+              </label>
+              <label class="rsvp__option">
+                <input type="checkbox" name="drinks" value="non-alcoholic" />
+                Безалкогольные напитки
+              </label>
+            </fieldset>
+
+            <fieldset class="rsvp__field">
+              <legend class="rsvp__question">Нужен ли трансфер?</legend>
+              <label class="rsvp__option">
+                <input type="radio" name="transfer" value="both-ways" />
+                Туда и обратно
+              </label>
+              <label class="rsvp__option">
+                <input type="radio" name="transfer" value="there" />
+                Только туда
+              </label>
+              <label class="rsvp__option">
+                <input type="radio" name="transfer" value="back" />
+                Только обратно
+              </label>
+              <label class="rsvp__option">
+                <input type="radio" name="transfer" value="none" />
+                Доберусь сам(а)
+              </label>
+            </fieldset>
+          </div>
+
+          <div class="rsvp__field">
+            <label class="rsvp__question" for="rsvp-message">
+              Пожелания или вопросы
+            </label>
+            <textarea
+              class="rsvp__input rsvp__textarea"
+              id="rsvp-message"
+              name="message"
+              rows="3"
+              placeholder="Аллергии, нелюбимые ингредиенты, любимая песня для танцпола — всё, что нам стоит знать"
+            ></textarea>
+          </div>
+
+          <p class="rsvp__error" role="alert" hidden>
+            Пожалуйста, укажите имя и ответьте, сможете ли прийти.
+          </p>
+          <button class="rsvp__submit" type="submit">Отправить</button>
+          <p class="rsvp__thanks" role="status" hidden>
+            Спасибо! Ваш ответ получен.
+          </p>
+        </form>
+      </section>
+
+      <section class="contacts">
+        <h2 class="contacts__title">Контакты</h2>
+        <p class="contacts__text">
+          Если у&nbsp;Вас есть любые вопросы,<br />напишите нам:
+        </p>
+        <a
+          class="contacts__button"
+          href="https://t.me/LegenDarya"
+          target="_blank"
+          rel="noopener"
+          >Написать Даше</a
+        >
+        <a
+          class="contacts__button"
+          href="https://t.me/SurgeonDeath"
+          target="_blank"
+          rel="noopener"
+          >Написать Диме</a
+        >
+      </section>
+
+      <section class="countdown">
+        <h2 class="countdown__title">
+          <span>С нетерпением</span>
+          <span>будем ждать Вас!</span>
+        </h2>
+
+        <div class="countdown__wrap">
+          <img
+            class="countdown__flower"
+            src="./img/flower.svg"
+            alt=""
+            aria-hidden="true"
+          />
+          <img
+            class="countdown__lemon"
+            src="./img/lemon.svg"
+            alt=""
+            aria-hidden="true"
+          />
+
+          <div class="countdown__timer" data-date="2027-09-05T15:00:00+03:00">
+            <div class="countdown__unit">
+              <span class="countdown__value" data-unit="days">00</span>
+              <span class="countdown__label">дни</span>
+            </div>
+            <span class="countdown__colon" aria-hidden="true">:</span>
+            <div class="countdown__unit">
+              <span class="countdown__value" data-unit="hours">00</span>
+              <span class="countdown__label">часы</span>
+            </div>
+            <span class="countdown__colon" aria-hidden="true">:</span>
+            <div class="countdown__unit">
+              <span class="countdown__value" data-unit="minutes">00</span>
+              <span class="countdown__label">минуты</span>
+            </div>
+            <span class="countdown__colon" aria-hidden="true">:</span>
+            <div class="countdown__unit">
+              <span class="countdown__value" data-unit="seconds">00</span>
+              <span class="countdown__label">секунды</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+.dresscode {
+  --dresscode-green: #787f55;
+
+  padding: 14vw 6vw 0;
+  background: #fdfbf3;
+  color: var(--dresscode-green);
+  text-align: center;
+}
+
+.dresscode__title {
+  margin: 0;
+  font-family: "Great Vibes", cursive;
+  font-size: 14vw;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.dresscode__subtitle {
+  margin: 2vw 0 6vw;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 3.6vw;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.dresscode__text {
+  margin: 0 auto;
+  max-width: 78vw;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 4.6vw;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.dresscode__palette {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2vw;
+  margin: 7vw 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 3.2vw;
+  font-weight: 500;
+}
+
+.dresscode__color::before {
+  content: "";
+  display: block;
+  aspect-ratio: 3 / 4;
+  margin-bottom: 1.5vw;
+  border: 1px solid rgb(0 0 0 / 0.08);
+  border-radius: 999px 999px 0 0;
+  background: var(--swatch);
+}
+
+/* Полоса, по которой бабочки пролетают справа налево при прокрутке */
+.dresscode__flight {
+  position: relative;
+  height: 55vw;
+  margin: 0 -6vw;
+}
+
+.dresscode__butterfly {
+  position: absolute;
+  left: 0;
+  will-change: transform;
+}
+
+.dresscode__butterfly--yellow {
+  top: 8vw;
+  width: 20vw;
+}
+
+.dresscode__butterfly--pastel {
+  top: 22vw;
+  width: 18vw;
+}
+
+.dresscode__butterfly img {
+  display: block;
+  width: 100%;
+  animation: dresscode-flap 0.35s ease-in-out infinite alternate;
+}
+
+.dresscode__butterfly--pastel img {
+  animation-duration: 0.3s;
+  animation-delay: -0.15s;
+}
+
+@keyframes dresscode-flap {
+  to {
+    transform: scaleX(0.55);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dresscode__butterfly img {
+    animation: none;
+  }
+}

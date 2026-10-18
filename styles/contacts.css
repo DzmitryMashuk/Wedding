@@ -1,0 +1,45 @@
+.contacts {
+  --contacts-green: #787f55;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16vw 8vw 6vw;
+  background: #fdfbf3;
+  color: var(--contacts-green);
+  text-align: center;
+}
+
+.contacts__title {
+  margin: 0;
+  font-family: "Great Vibes", cursive;
+  font-size: 14vw;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.contacts__text {
+  margin: 5vw 0 7vw;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 4.6vw;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.contacts__button {
+  box-sizing: border-box;
+  width: 70vw;
+  margin-bottom: 5vw;
+  padding: 3vw;
+  border-radius: 999px;
+  background: var(--contacts-green);
+  color: #fdfbf3;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 5.4vw;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.contacts__button:active {
+  background: #656b47;
+}
