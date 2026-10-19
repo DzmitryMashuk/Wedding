@@ -135,6 +135,11 @@ rsvpForm.addEventListener("submit", async (event) => {
     return;
   }
 
+  if (answers.company === "plus-one" && !answers.partner) {
+    showError("Пожалуйста, укажите имя и фамилию спутника.");
+    return;
+  }
+
   rsvpError.hidden = true;
   rsvpSubmit.disabled = true;
   rsvpSubmit.textContent = "Отправляем…";
