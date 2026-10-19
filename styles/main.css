@@ -6,7 +6,8 @@ body {
   display: none;
 }
 
-@media (min-width: 426px) {
+/* Большие телефоны бывают до 440px (iPhone Pro Max), берём с запасом */
+@media (min-width: 500px) {
   body {
     overflow: hidden;
   }
