@@ -85,7 +85,7 @@
   cursor: pointer;
 }
 
-/* Радио и чекбоксы — одинаковые кружки, как в макете */
+/* Радио — кружки, как в макете; чекбоксы переопределены ниже */
 .rsvp__option input {
   appearance: none;
   flex: none;
@@ -115,6 +115,31 @@
 
 .rsvp__option input:checked::before {
   transform: scale(1);
+}
+
+/* Чекбоксы — квадратные с галочкой, чтобы было видно, что можно выбрать несколько */
+.rsvp__option input[type="checkbox"] {
+  border-radius: 4px;
+  transition: background-color 0.15s ease-out, border-color 0.15s ease-out;
+}
+
+.rsvp__option input[type="checkbox"]::before {
+  width: 28%;
+  height: 55%;
+  margin-top: -12%;
+  border: solid #fdfbf3;
+  border-width: 0 2px 2px 0;
+  border-radius: 0;
+  background: none;
+  transform: rotate(45deg) scale(0);
+}
+
+.rsvp__option input[type="checkbox"]:checked {
+  background: var(--rsvp-green);
+}
+
+.rsvp__option input[type="checkbox"]:checked::before {
+  transform: rotate(45deg) scale(1);
 }
 
 .rsvp__option input:focus-visible {
